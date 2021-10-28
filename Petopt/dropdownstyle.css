@@ -1,0 +1,79 @@
+*
+{
+padding : 0;
+margin : 0;
+box-sizing : border-box;
+}
+
+.menu-bar                              /*menu bar properties*/
+{
+background : #6C4A4A;
+padding : 15px;
+text-align : left;
+}
+
+.menu-bar ul				/*menu bar contents display*/
+{
+display : inline-flex;
+list-style : none;
+color : white;
+}
+
+.menu-bar ul li				/*menu bar list items*/
+{
+width : 130px;
+margin : 5px;
+padding : 15px;
+}
+
+.menu-bar ul li a			/*menu bar items(links)*/
+{
+text-decoration : none;                 /*to avoid appearance as links*/
+color : white;
+}
+
+.active, .menu-bar ul li:hover		/*hovering over menu bar contents*/
+{
+background : #DDBEBE;
+border-radius : 8px;                   /*shape on hovering*/
+}
+
+.sub-menu-1				/*to hide the contents of a menu*/
+{
+display : none;
+}
+
+.menu-bar ul li:hover .sub-menu-1	/*display the contents of menu on hover*/
+{
+display : block;
+position : absolute;
+border-radius : 8px;
+background-color : #889EAF;
+margin-top :5px;
+margin-left : -5px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul		/*dropdown properties*/
+{
+display : block;
+margin : 8px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li		/*dropdown items properties*/
+{
+width : 118px;
+padding : 8px;
+background : transparent ;
+text-align : center;
+margin : 5px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover		/*on hovering an item in dropdown*/
+{
+color : #506D84
+}
+
+
+
+
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head><title>FEEDBACK FORMS</title></head>
+
+<!-- dropdown style css-->
+<link rel = "stylesheet" href = "dropdownstyle.css">
+<div style = "width : 100%;">
+
+<div style = "width : 100%;" class = "menu-bar">
+<ul>
+
+
+<!-- First item in menubar-->
+<li><a href = "#">PetCare</a>
+<div class = "sub-menu-1">
+<ul>
+<!-- Sub items in first menubar-->
+<li><a href = "cats.html">Cat care</a></li>
+<li><a href = "dog.html">Dog care</a></li>
+<li><a href = "rabbit.html">Rabbit care</a></li>
+<li><a href = "tortoise.html">Tortoise care</a></li>
+</ul>
+</div>
+</li>
+
+<!-- Second item in menubar-->
+<li><a href = "#">Adopt</a>
+<div class = "sub-menu-1">
+<ul>
+<!-- Sub items in second menubar-->
+<li><a href = "cats1.html">Cat</a></li>
+<li><a href = "dogs2.html">Dog</a></li>
+<li><a href = "rabbits1.html">Rabbit</a></li>
+<li><a href = "tortoise1.html">Tortoise</a></li>
+</ul>
+</div>
+</li>
+
+<!-- Third item in menubar-->
+<li><a href = "login.html">Login/Register</a></li>
+
+<!-- Fourth item in menubar-->
+<li><a href = "allinone.html">Home</a></li>
+
+<!-- Fifth item in menubar-->
+<li><a href = "Adoptionform.html">Adoption Form</a></li>
+
+
+</ul>
+
+</div>
+
+
+
+</div>
+<br>
+<style>
+
+.slidercontainer{
+width :100%;
+}
+
+.slider{
+-webkit-appearance : none;
+width : 30%;
+height :15px;
+border-radius : 5px;
+background : #d3d3d3;
+outline : none;
+opacity : 0.9;
+-webkit-transition : .2s;
+transition : opacity .2s;
+}
+
+.slider::-webkit-slider-thumb{
+-webkit-appearance : none;
+appearance :none;
+width : 25px;
+height : 25px;
+border-radius : 60%;
+background : #651A1A;
+cursor : pointer;
+}
+
+.slider::-moz-rangee-thumb{
+width : 25px;
+height : 25px;
+border-radius : 50%;
+background : #651A1A;
+cursor : pointer;
+}
+
+
+</style>
+<script type="text/javascript">
+function thankyou(){
+alert("Thank you for your valuable feedback!");
+window.location.href="allinone.html";
+}
+</script>
+
+<body style = "background-color:#DDBEBE;font-style : Alegreya;" >
+<center>
+
+<h1>FEEDBACK</h1><br><br>
+
+
+<form method = "post" autocomplete="off" action="allinone.html">
+
+<h3>RATE OUR WEBSITE</h3>
+
+<div class = "slidercontainer">
+<input type = "range" min = "0" max = "10" value = "0" class = "slider" id = "rating">
+</div>
+
+<br>
+
+<div>
+<label for = "What did you like about our website ?"><h3>What did you like about our website ? </h3></label>
+<input type = "text" name = "What did you like about our website ?" id = "What did you like about our website ?" style="height:30px;width:350px;background-color :#d3d3d3" required>
+</div>
+
+<br>
+
+<div>
+<label for = "What did you find missing ?"><h3>What did you find missing ? </h3></label>
+<input type = "text" name = "What did you find missing ?" id = "What did you find missing ?" style="height:30px;width:350px;background-color :#d3d3d3" required>
+</div>
+
+<br>
+
+<div>
+<label for = "What could have been better ?"><h3>What could have been better ? </h3></label>
+<input type = "text" name = "What could have been better ?" id = "What could have been better ?" style="height:30px;width:350px; background-color :#d3d3d3 ;" required>
+</div>
+
+<br>
+<button style="background:#651A1A;color : white" onclick="thankyou()">Submit</button>
+
+</form>
+</center>
+
+
+</body>
+</html>

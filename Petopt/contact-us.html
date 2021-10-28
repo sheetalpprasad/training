@@ -1,0 +1,236 @@
+
+<!-- dropdown style css-->
+<link rel = "stylesheet" href = "dropdownstyle.css">
+<div style = "width : 100%;">
+
+<div style = "width : 100%;" class = "menu-bar">
+<ul>
+
+<!-- First item in menubar-->
+<li><a href = "#">PetCare</a>
+<div class = "sub-menu-1">
+<ul>
+<!-- Sub items in first menubar-->
+<li><a href = "cats.html">Cat care</a></li>
+<li><a href = "dog.html">Dog care</a></li>
+<li><a href = "rabbit.html">Rabbit care</a></li>
+<li><a href = "tortoise.html">Tortoise care</a></li>
+</ul>
+</div>
+</li>
+
+<!-- Second item in menubar-->
+<li><a href = "#">Adopt</a>
+<div class = "sub-menu-1">
+<ul>
+<!-- Sub items in second menubar-->
+<li><a href = "cats1.html">Cat</a></li>
+<li><a href = "dogs2.html">Dog</a></li>
+<li><a href = "rabbits1.html">Rabbit</a></li>
+<li><a href = "tortoise1.html">Tortoise</a></li>
+</ul>
+</div>
+</li>
+
+<!-- Third item in menubar-->
+<li><a href = "login.html">Login/Register</a></li>
+
+<!-- Fourth item in menubar-->
+<li><a href = "allinone.html">Home</a></li>
+
+<!-- Fifth item in menubar-->
+<li><a href = "Adoptionform.html">Adoption Form</a></li>
+
+</ul>
+
+</div>
+
+
+
+</div>
+<br>
+<style>
+body {
+    background-color: #DDBEBE;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif, 'arial';
+    font-weight: 600;
+    font-size: 72px;
+    color: white;
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif, 'arial';
+    font-weight: 400;
+    font-size: 20px;
+    color: #9b9b9b;
+    line-height: 1.5;
+}
+
+/* ///// inputs /////*/
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+    font-size: 0.75em;
+    color: #999;
+    top: -5px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+}
+
+.styled-input {
+    float: left;
+    width: 293px;
+    margin: 1rem 0;
+    position: relative;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px){
+    .styled-input {
+        width:100%;
+    }
+}
+
+.styled-input label {
+    color: #999;
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.styled-input.wide { 
+    width: 650px;
+    max-width: 100%;
+}
+
+input,
+textarea {
+    padding: 30px;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #6C4A4A;
+
+    color: white;
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus { outline: 0; }
+
+input:focus ~ span,
+textarea:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+
+textarea {
+    width: 100%;
+    min-height: 15em;
+}
+
+.input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+}
+
+
+
+.submit-btn {
+    padding: 7px 35px;
+    padding-bottom:10px;
+    margin-bottom:10px;
+    border:solid black;
+    border-radius: 60px;
+    display: inline-block;
+
+    background-color: #DDBEBE;
+    color:  #6C4A4A;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+	background: #FFFFFF;
+	-webkit-transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+
+
+@media (max-width: 768px) {
+    .submit-btn {
+        width:100%;
+        float: none;
+        text-align:center;
+    }
+}
+
+input[type=checkbox] + label {
+  color: #ccc;
+  font-style: italic;
+} 
+
+input[type=checkbox]:checked + label {
+  color: #f00;
+  font-style: normal;
+}
+</style>
+
+<script type="text/javascript">
+function thankyou(){
+alert("Thank you for contacting us!");
+window.location.href="allinone.html";
+}
+</script>
+<div class="container">
+	<div class="row">
+			<h1>Contact Us</h1>
+	</div>
+	<div class="row">
+			<h4 style="text-align:center;color:black;">We'd love to hear from you!</h4>
+	</div>
+	<div class="row input-container">
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" required />
+					<label>Name</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input">
+					<input type="text" required />
+					<label>Email</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input" style="float:right;">
+					<input type="text" required />
+					<label>Phone Number</label> 
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<textarea required></textarea>
+					<label>Message</label>
+				</div>
+			</div>
+<center>
+				<div class="btn-lrg submit-btn" onclick="thankyou()">Send Message</div>
+	</center>
+
+			</div>
+	</div>
+</div>
+<br>
+<br>

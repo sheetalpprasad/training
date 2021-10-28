@@ -1,0 +1,78 @@
+body{
+margin : 0;
+padding : 0;
+background : #34495e;
+}
+
+.slidershow{				/*size of image slider*/
+width : 700px;
+height : 400px;
+overflow :hidden;
+}
+
+.middle{				/*positioning of image slider*/
+position : absolute;
+top : 75%;
+left : 48%;
+transform : translate(-50%,-50%);
+}
+
+.navigation{				/*navigation bar positioning*/
+position : absolute;
+bottom : 20px;
+left : 55%;
+transform : translateX(-50%);
+display : flex;
+}
+
+.bar{                                     /*navigation bar properties*/
+width : 40px;
+height : 10px;
+border : 2px solid black;
+margin : 6px;
+cursor : pointer;
+transition : 0.4s;
+}
+
+.bar:hover{				/*color on hovering over navigation bar*/
+background : black;
+}
+
+input[name = "r"]{y
+position : absolute;
+visibility : hidden;
+}
+
+.slides{			/*slides appearance at a tym*/
+width : 500%;
+height : 150%;
+display : flex;
+}
+
+.slide{				/*width is set in accordance with margin-left for each slides*/
+width : 25%;
+transition : 0.6s;
+}
+
+.slide img{       		/*image slider appearance*/
+width : 80%;
+height : 100%
+}
+
+#r1:checked ~ .s1{		/*use hover for hovering or checked for click*/
+margin-left : 0;
+}
+
+#r2:checked ~ .s1{
+margin-left : -25%;
+}
+
+#r3:checked ~ .s1{
+margin-left : -50%;
+}
+
+#r4:checked ~ .s1{
+margin-left : -75%;
+}
+
+

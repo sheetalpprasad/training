@@ -1,0 +1,127 @@
+<html>
+
+<!-- dropdown style css-->
+<link rel = "stylesheet" href = "dropdownstyle.css">
+
+<div style = "width : 100%;">
+
+<div style = "width : 100%;" class = "menu-bar">
+<ul>
+
+<!-- First item in menubar-->
+<li><a href = "#">PetCare</a>
+<div class = "sub-menu-1">
+<ul>
+<!-- Sub items in first menubar-->
+<li><a href = "cats.html">Cat care</a></li>
+<li><a href = "dog.html">Dog care</a></li>
+<li><a href = "rabbit.html">Rabbit care</a></li>
+<li><a href = "tortoise.html">Tortoise care</a></li>
+</ul>
+</div>
+</li>
+
+<!-- Second item in menubar-->
+<li><a href = "#">Adopt</a>
+<div class = "sub-menu-1">
+<ul>
+<!-- Sub items in second menubar-->
+<li><a href = "cats1.html">Cat</a></li>
+<li><a href = "dogs2.html">Dog</a></li>
+<li><a href = "rabbits1.html">Rabbit</a></li>
+<li><a href = "tortoise1.html">Tortoise</a></li>
+</ul>
+</div>
+</li>
+
+<!-- Third item in menubar-->
+<li><a href = "login.html">Login/Register</a></li>
+
+<!-- Fourth item in menubar-->
+<li><a href = "allinone.html">Home</a></li>
+
+<!-- Fifth item in menubar-->
+<li><a href = "Adoptionform.html">Adoption Form</a></li>
+
+</ul>
+
+</div>
+
+
+
+</div>
+<br>
+<script type="text/javascript">
+function validateEmail(){
+var fname= document.registerForm.firstname.value;
+var lname= document.registerForm.lastname.value;
+var x= document.registerForm.email.value;
+var at = x.indexOf("@");
+var dot = x.lastIndexOf(".");
+var password = document.registerForm.pass.value;
+var repassword = document.registerForm.pass1.value;
+
+
+
+if(at<1||dot<at+2||dot+2>=x.length){
+alert("Please enter a valid email");
+return false;
+}
+
+if (password.length<6){
+alert("Minimum length of Password should be 6");
+}
+
+if(password==repassword){
+return true;}
+else{
+alert("Password must be same");
+return false;}
+}
+
+</script>
+
+<h2><center>Register and get yourself a new friend! <center></h2>
+<title>
+Registration Page
+</title>
+</head>
+<body style="background-color:#DDBEBE;color : #852747">
+<br>
+<form name="registerForm" onsubmit="return validateEmail();" method="POST" action="tables.html">
+<center>
+<b><label> Firstname </label>
+<input type="text" name="firstname" size="17"/ required> <br> <br>
+<label> Lastname: </label>
+<input type="text" name="lastname" size="17"/ required> <br> <br>
+
+<br>
+<label>
+Gender : </label><br>
+<input type="radio" name="gender"/> Male <br>
+<input type="radio" name="gender"/> Female <br>
+<input type="radio" name="gender"/> Other
+<br>
+<br>
+
+<label>
+Phone :
+</label>
+<input type="text" name="country code" value="+91" size="2" required/>
+<input type="text" name="phone" size="10" required/> <br> <br>
+Email:
+<input type="email" id="email" name="email" /> <br>
+<br> <br>
+Password:
+<input type="Password" id="pass" name="pass" required> <br>
+<br> <br> 
+Re-Enter Password:
+<input type="Password" id="pass1" name="pass1" required> <br>
+<br> <br> </b>
+<button style="background:#651A1A;font-size : 15px;style=text-decoration:none;color:white;" >Submit</button>
+<br><br>
+<a href="login.html" style="text-decoration:none;color:black"><b>Already have an account? Login here!</b></a>
+</center>
+</form>
+</body>
+</html>
